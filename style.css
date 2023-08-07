@@ -1,38 +1,112 @@
-html, body {
-    height: 100%;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
-a  {
-    text-decoration: none;
-}
-  
-ul {
-    list-style-type: none;
+* {
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    font-family: Roboto, sans-serif;
-    background: #aaa;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    font-family: 'Roboto', sans-serif;
 }
 
-.header {
-    background-color: #1F2937;
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    background-color: #1f2937;
+    padding: 1em 13em;
+}
+
+#logo {
+    font-size: 24px;
+    font-weight: 900;
     color: #F9FAF8;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 52px;
+}
+
+.topPane {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.topPane ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+.subText {
+    font-size: 18px;
+    color: white;
+}
+
+.welcome {
+    padding: 7em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.welcome .leftHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.welcome .rightHeader {
+    flex-shrink: 0;
+    width: 50%;
+}
+
+.siteSell {
+    color: #F9FAF8;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+button {
+    padding: 7px 1em;
+    width: 120px;
+    background-color: #3882F6;
+    border-radius: 8px;
+}
+
+.welcome button {
+    border: none;
+}
+
+.image {
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 215px;
+    width: 500px;
+}
+
+
+.quote { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 200px
+}
+
+.quote p {
+    align-self: flex-end;
+    font-weight: bolder;
+    font-size: 24px;
+    color: #1f2937;
 }
 
 .info {
     display: flex;
     justify-content: center;
+    padding: 30px;
+	font-size: 40px;
 }
 
 img {
@@ -40,22 +114,23 @@ img {
     height: 100px;
   }
 
-.plants {
+.plantContainer {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: space-evenly;
   gap: 52px;
+  padding: 200px;
+}
+
+.plants {
+   max-width: 200px;
 }
 
 .footer {
     background-color: #1F2937;
     color: #F9FAF8;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 52px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
